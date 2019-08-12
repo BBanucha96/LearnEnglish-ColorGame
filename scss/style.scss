@@ -1,0 +1,61 @@
+$primary_color: #242424;
+$secondary_color: #e0a800;
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background-color: $primary_color;
+  color: $secondary_color;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#game {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  #upperSection {
+    width: 100%;
+    min-height: 150px;
+    padding-top: 25px;
+    text-align: center;
+
+    #timer {
+      float: left;
+    }
+
+    #colorName {
+      font-size: 4rem;
+    }
+  }
+
+  #display {
+    .square {
+      width: 20%;
+      background-color: $secondary_color;
+      padding-bottom: 20%;
+      float: left;
+      margin: 2.5%;
+      border-radius: 50%;
+    }
+  }
+
+  #lowerSection {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    #health {
+      float: left;
+    }
+
+    #score {
+      float: right;
+    }
+  }
+}
