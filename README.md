@@ -6,7 +6,7 @@ A game for a kids to improve their knowledge of English
 
 Website preview: https://bit.ly/33JhMhd
 
-![](https://i.imgur.com/01bpODu.png)
+![](https://i.imgur.com/f6PxbQL.png)
 
 ## Built with usage of:
 
