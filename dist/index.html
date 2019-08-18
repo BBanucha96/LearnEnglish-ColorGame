@@ -14,19 +14,41 @@
   <body>
     <div id="game">
       <div id="upperSection">
-        <span id="timer">czas: 20s</span><br />
-        <span id="colorName">Red</span>
+        <span id="timer"></span><br />
+        <span id="answer"></span>
       </div>
       <div id="display">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
       </div>
-      <div id="lowerSection">
-        <span id="health">zdrowie: XXX</span>
-        <span id="score">wynik: 0</span>
+      <button class="btn" id="next">NASTĘPNE</button>
+      <div id="hiddenDisplay">
+        <div class="underCircle"></div>
+        <div class="underCircle"></div>
+        <div class="underCircle"></div>
+        <div class="underCircle"></div>
       </div>
     </div>
+    <div id="lowerSection">
+      <span id="health">zdrowie:</span>
+      <div id="heartsBox">
+        <img class="heart" id="heart-1" src="img/heart.png" />
+        <img class="heart" id="heart-2" src="img/heart.png" />
+        <img class="heart" id="heart-3" src="img/heart.png" />
+      </div>
+      <span id="score">wynik: 0</span>
+    </div>
+    <button class="btn" id="start">START</button>
+
+    <div id="endGame">
+      <div id="endMessage"></div>
+      <img src="" alt="grade" id="grade" />
+      <div id="endScore"></div>
+      <button id="btnRestart" class="btn">Rozpocznij od nowa!</button>
+    </div>
+
+    <script src="js/game-core.js"></script>
   </body>
 </html>

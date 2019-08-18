@@ -15,26 +15,119 @@ body {
     padding-top: 25px;
     text-align: center; }
     #game #upperSection #timer {
-      float: left; }
-    #game #upperSection #colorName {
-      font-size: 4rem; }
-  #game #display .square {
+      float: left;
+      padding-left: 1rem; }
+    #game #upperSection #answer {
+      font-size: 4rem;
+      text-transform: uppercase; }
+  #game #display .circle {
     width: 20%;
-    background-color: #e0a800;
     padding-bottom: 20%;
     float: left;
     margin: 2.5%;
-    border-radius: 50%; }
-  #game #lowerSection {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto; }
-    #game #lowerSection #health {
-      float: left; }
-    #game #lowerSection #score {
-      float: right; }
+    border-radius: 50%;
+    backface-visibility: hidden;
+    z-index: 1; }
+  #game #display .circle:hover {
+    cursor: pointer; }
+  #game #next {
+    display: none; }
+
+#lowerSection {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none; }
+  #lowerSection #health {
+    float: left; }
+  #lowerSection #heartsBox {
+    display: inline-block;
+    width: 80px;
+    position: relative; }
+    #lowerSection #heartsBox .heart {
+      width: 28%;
+      float: left;
+      margin: 2%; }
+  #lowerSection #score {
+    float: right; }
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  outline-style: none;
+  background-color: transparent;
+  border: none;
+  color: #e0a800;
+  cursor: pointer;
+  font-size: 2rem; }
+
+.btn:hover {
+  color: #ffde7a;
+  transition: color 0.5s; }
+
+.btn:not(:hover) {
+  transition: color 0.5s; }
+
+#start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 700; }
+
+#endGame {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 400;
+  display: none;
+  text-align: center;
+  min-width: 400px; }
+  #endGame #endMessage {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: inline-block; }
+  #endGame #endScore {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  #endGame #grade {
+    max-width: 85px;
+    max-height: 85px; }
+
+.shakeAnimation {
+  animation: shake 0.5s;
+  animation-iteration-count: 1; }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
