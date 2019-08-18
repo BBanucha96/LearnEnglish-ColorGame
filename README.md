@@ -1,6 +1,6 @@
 # Learn English - Color Game
 
-A game for a kids to improve their english knowledge
+A game for a kids to improve their knowledge of English
 
 ## Getting Started
 
